@@ -1,0 +1,888 @@
+/**************************
+
+    Template Name: Project 2
+    Author: Halima Sadia Mim
+    Description: A simple Portfolio HTML5 Template
+
+**************************/
+
+/**************************
+
+        CSS INDEX
+    
+    0. Common CSS
+    1. Hero Section
+    2. Banner Section
+    3. Future Section
+    4. Banner-2 Section
+    5. Popular Section
+    6. Popular-2 Section
+    7. Trending Section
+    8. Journal Section
+    9. Follow Section
+
+**************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background: #fff;
+    color: #000;
+    font-size: 10px;
+    text-rendering: optimizeLegibility
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Reuseable Components */
+
+.row{
+    max-width: 1100px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 350%;
+    padding: 50px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/**************************
+
+   1. Hero Section
+
+**************************/
+
+#head{
+    background: transparent;
+    padding: 40px 0px;
+}
+
+.grid-header-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 20px;
+    grid-gap: 10px;
+}
+
+.grid-item:nth-child(1){
+    width: 200px;
+    margin-top: 10px;
+}
+
+.grid-item:nth-child(2){
+    margin-left: -20px;
+}
+
+.dropdown ul{
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.dropdown ul li{
+    float: left;
+    font-size: 200%;
+    list-style-type: none;
+}
+
+.dropdown ul li a{
+    padding: 0px 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown ul li a:hover{
+    color: #ff5353;
+}
+
+.dropdown-content{
+    margin-top: 20px;
+    display: block;
+    position: absolute;
+}
+
+/*** sub-content ***/
+
+.dropdown-content .job{
+    display: none;
+    background-color: #fff;
+    paddingl: 5px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 80%;
+}
+.dropdown-content .job:hover{
+    background: #f5f5f5;
+}
+
+.sub-drop:hover .dropdown-content{
+    display: block;
+}
+
+.grid-item:nth-child(3){
+    margin-left: 100px;
+}
+
+.grid-item:nth-child(3) span{
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.grid-item:nth-child(3) span:hover{
+    color: #ff5353;
+    cursor: pointer;
+}
+
+/**************************
+
+   2. Banner Section
+
+**************************/
+
+#banner{
+    background: url(img/bg-1.jpg) no-repeat center/ cover;
+    height: 500px;
+}
+
+.grid-banner-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    height: 480px;
+}
+
+#banner .grid-item:nth-child(1){
+    margin: 50px;
+    text-align: center;
+    width: 480px;
+}
+
+#banner .grid-item p{
+    font-size: 135%;
+    letter-spacing: 4px;
+    color: dimgray;
+    margin-top: 50px;
+} 
+
+#banner .grid-item h2{
+    font-size: 550%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+
+#banner .btn{
+    height: 50px;
+    width: 170px;
+    background-color: #ff5353;
+    border: none;
+    border-radius: 5px;
+    font-size: 120%;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 50px;
+    transition: .7s;
+}
+
+#banner .btn:hover{
+    background: #fff;
+    color: #006ecb;
+}
+
+#banner .grid-item:nth-child(2){
+    height: 500px;
+    width: 500px;
+    background: url(img/ban-1.png) no-repeat center/ cover;
+}
+
+/**************************
+
+   3. Future Section
+
+**************************/
+
+
+#future h2{
+    font-size: 350%;
+    padding: 50px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-future-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin-top: 30px;
+}
+
+#future .grid-item{
+    height: 450px;
+    width: 320px;
+}
+
+#future .grid-item p{
+    text-align: center;
+    color: grey;
+    font-size: 160%;
+    margin-top: 480px;
+}
+
+#future .grid-item h5{
+    font-size: 160%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icons{
+    text-align: center;
+    margin-top: 10px;
+    color: #ff5353;
+}
+
+.icons span{
+    font-size: 150%;
+}
+
+#future .grid-item p:hover{
+    color: #ff5353;
+    cursor: pointer;
+}
+
+#future .grid-item:nth-child(1){
+    background: url(img/1.jpg) no-repeat center/ cover;
+    margin-top: -3px;
+    height: 455px;
+}
+
+#future .grid-item:nth-child(2){
+    background: url(img/2.jpg) no-repeat center/ cover;
+}
+
+#future .grid-item:nth-child(3){
+    background: url(img/3.jpg) no-repeat center/ cover;
+    margin-left: -30px;
+}
+
+#future .tin-number{
+    margin-left: 130px;
+}
+
+#future .tin-number:hover{
+    cursor: pointer;
+}
+
+#future .tin-number span{
+    color: #ff5353;
+    margin-left: 0px;
+    margin-top: 8px;
+    padding-left: 0px;
+    font-size: 150%; 
+    
+}
+
+/**************************
+
+   4. Banner-2 Section
+
+**************************/
+
+#banner2{
+    background-color: #EAE2D8;
+    margin-top: 150px;
+    height: 350px;
+}
+
+.grid-banner2-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#banner2 .grid-item:nth-child(1){
+    width: 520px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#banner2 h1{
+    font-size: 570%;
+    font-weight: 100;
+    font-family: 'Lobster Two', cursive;
+    margin-top: 80px;
+}
+
+#banner2 p{
+    font-size: 230%;
+    font-family: 'PT Sans', sans-serif;
+    color: #361a1a;
+    letter-spacing: 2.1;
+}
+
+#banner2 .btn{
+    height: 50px;
+    width: 170px;
+    background-color: #ff5353;
+    border: none;
+    border-radius: 5px;
+    font-size: 120%;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 50px;
+    transition: .7s;
+}
+
+#banner2 .btn:hover{
+    background: #fff;
+    color: #006ecb;
+}
+
+#banner2 .grid-item:nth-child(2){
+    background: url(img/ban-2.png) no-repeat center/ cover;
+    height: 350px;
+    margin-left: -70px;
+}
+
+/**************************
+
+   5. Popular Section
+
+**************************/
+
+
+#popular h2{
+    font-size: 350%;
+    padding: 50px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-popular-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#popular .grid-item p{
+    text-align: center;
+    color: grey;
+    font-size: 160%;
+    margin-top: 330px;
+}
+
+#popular .grid-item h5{
+    font-size: 160%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icons{
+    text-align: center;
+    margin-top: 10px;
+    color: #ff5353;
+}
+
+.icons span{
+    font-size: 150%;
+}
+
+#popular .grid-item p:hover{
+    color: #ff5353;
+    cursor: pointer;
+}
+
+#popular .tin-number:hover{
+    cursor: pointer;
+}
+
+#popular .tin-number{
+    text-align: center;
+}
+
+#popular .tin-number span{
+    color: #ff5353;
+    margin-left: 0px;
+    margin-top: 8px;
+    padding-left: 0px;
+    font-size: 150%; 
+    
+}
+
+#popular .grid-item:nth-child(1){
+    background: url(img/popular-1.jpg) no-repeat center/ cover;
+    height: 300px;
+    width: 250px;
+    margin-top: 0px;
+}
+
+#popular .grid-item:nth-child(2){
+    background: url(img/popular-2.jpg) no-repeat center/ cover;
+    height: 300px;
+    width: 250px;
+    margin-top: 0px;
+    margin-left: 4px;
+}
+
+#popular .grid-item:nth-child(3){
+    background: url(img/popular-3.jpg) no-repeat center/ cover;
+    height: 300px;
+    width: 250px;
+    margin-top: 0px;
+    margin-left: 4px;
+}
+
+#popular .grid-item:nth-child(4){
+    background: url(img/popular-4.jpg) no-repeat center/ cover;
+    height: 300px;
+    width: 250px;
+    margin-top:          0px;
+    margin-left: 4px;
+}
+
+/**************************
+
+   6. Popular-2 Section
+
+**************************/
+
+.grid-driver-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#popular2 .grid-item:nth-child(1){
+    background: url(img/1.png) no-repeat center;
+    height: 170px;
+    width: 250px;
+    margin-top: 140px;
+}
+
+#popular2 .grid-item:nth-child(2){
+    background: url(img/2.png) no-repeat center;
+    height: 170px;
+    width: 250px;
+    margin-top: 140px;
+    margin-left: 5px;
+}
+
+#popular2 .grid-item:nth-child(3){
+    background: url(img/3.png) no-repeat center;
+    height: 170px;
+    width: 250px;
+    margin-top: 140px;
+    margin-left: 10px;
+}
+
+#popular2 .grid-item:nth-child(4){
+    background: url(img/4.png) no-repeat center;
+    height: 170px;
+    width: 250px;
+    margin-top: 140px;
+    margin-left: 10px;
+}
+
+#popular2 h6{
+    text-align: center;
+    font-size: 140%;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+
+#popular2 P{
+    text-align: center;
+    font-size: 150%;
+    padding-top: 10px;
+    color: dimgray;
+}
+
+/**************************
+
+   7. Trending Section
+
+**************************/
+
+#trending h2{
+    font-size: 350%;
+    padding: 50px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.grid-trend-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#trending .grid-item{
+    background: green;
+    width: 250px;
+    height: 340px;
+}
+
+#trending .grid-item:nth-child(1){
+    background: url(img/trend-1.jpg) no-repeat center/ cover;
+}
+
+#trending .grid-item:nth-child(2){
+    background: url(img/trend-2.jpg) no-repeat center/ cover;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+#trending .grid-item:nth-child(3){
+    background: url(img/trend-3.jpg) no-repeat center;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+#trending .grid-item:nth-child(4){
+    background: url(img/trend-4.jpg) no-repeat center;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+#trending .grid-item:nth-child(5){
+    background: url(img/trend-5.jpg) no-repeat center;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+
+#trending .grid-item:nth-child(6){
+    background: url(img/trend-6.jpg) no-repeat center;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+
+#trending .grid-item:nth-child(7){
+    background: url(img/trend-7.jpg) no-repeat center;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+
+#trending .grid-item:nth-child(8){
+    background: url(img/trend-8.jpg) no-repeat center;
+    margin-left: 0px;
+    margin-top: 70px;
+}
+
+#trending .grid-item p{
+    text-align: center;
+    color: grey;
+    font-size: 160%;
+    margin-top: 370px;
+}
+
+#trending .grid-item h5{
+    font-size: 160%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icons{
+    text-align: center;
+    margin-top: 10px;
+    color: #ff5353;
+}
+
+.icons span:hover{
+    cursor: pointer;
+}
+
+.icons span{
+    font-size: 150%;
+}
+
+#trending .grid-item p:hover{
+    color: #ff5353;
+    cursor: pointer;
+}
+
+#trending .tin-number span:hover{
+    cursor: pointer;
+}
+
+#trending .tin-number{
+    text-align: center;
+}
+
+#trending .tin-number span{
+    color: #ff5353;
+    margin-left: 0px;
+    margin-top: 8px;
+    padding-left: 0px;
+    font-size: 150%; 
+    
+}
+
+/**************************
+
+   8. Journal Section
+
+**************************/
+
+#journal{
+    padding-top: 150px;
+}
+
+.grid-journal-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#journal .grid-item{
+    background: #fff;
+    width: 345px;
+    height: 350px;
+}
+
+#journal .grid-item:nth-child(1){
+    background: url(img/journal-1.jpg) no-repeat center/ cover;
+}
+
+#journal .grid-item:nth-child(2){
+    background: url(img/journal-2.jpg) no-repeat center/ cover;
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+
+#journal .grid-item:nth-child(3){
+    background: url(img/journal-3.jpg) no-repeat center/ cover;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+h4{
+    margin-top: 380px;
+    margin-bottom: 20px;
+    color: dimgray;
+    font-size: 130%;
+    transition: .27s;
+}
+
+h4:hover{
+    color: #ff5353;
+}
+
+.divided a{
+    color: #000;
+    font-size: 160%;
+    transition: .27s;
+    padding-bottom: 30px;
+}
+
+.divided a:hover{
+    color: #ff5353;
+}
+
+.cmt{
+    padding-top: 20px;
+    height: 50px;
+}
+
+.cmt a{
+    color: dimgray;
+    font-size: 120%;
+    margin-top: -5px;
+}
+#icon{
+    font-size: 160%;
+    margin-right: 0px;
+    color: dimgray;
+    margin-bottom: 0px;
+}
+
+/**************************
+
+   9. Follow Section
+
+**************************/
+
+#follow h2{
+    margin-top: 200px;
+}
+
+.grid-follow-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#follow .grid-item{
+    width: 200px;
+}
+
+#follow .grid-item:nth-child(2){
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+#follow .grid-item:nth-child(1):hover .overlay{
+    opacity: 1;
+}
+
+#follow .grid-item:nth-child(2):hover .overlay{
+    opacity: 1;
+}
+
+#follow .grid-item:nth-child(3){
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#follow .grid-item:nth-child(3):hover .overlay{
+    opacity: 1;
+}
+
+#follow .grid-item:nth-child(4){
+    margin-top: 10px;
+    margin-left: 30px;
+    
+}
+
+#follow .grid-item:nth-child(4):hover .overlay{
+    opacity: 1;
+}
+
+#follow .wrapper{
+    width: 70%;
+    margin: 0 auto;
+    transform: translate(-10%, -10%);
+}
+
+#follow img{
+    display: block;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#follow .content span{
+    font-size: 60px;
+    color: #fff;
+    margin-top: 90px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+#follow .overlay{
+    position: absolute;
+    width: 187%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(250, 104, 120, 0.74);
+    opacity: 0;
+    transition: .27s ease-in-out;
+}
+
+/**************************
+
+   10. Footer Section
+
+**************************/
+
+#footer{
+    background: #E9E2D8;
+    margin-top: 20px;
+}
+
+.grid-footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#footer .grid-item{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#footer ul li{
+    list-style-type: none;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+#footer a{
+    color: #797878;
+}
+
+#footer h5{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+#footer .grid-item:nth-child(3){
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+#footer .grid-item:nth-child(2){
+    margin-top: 10px;
+}
+
+#footer .line{
+    color: #a09e9e;
+    height: 0.1px;
+    margin-bottom: 30px;
+}
+
+.last-word{
+    text-align: center;
+    color: #a09e9e;
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-icons span{
+    font-size: 16px;
+    padding: 15px;
+    margin-left: 0px;
+}
+
+.footer-icons i{    
+    color: #000;
+    background: #fff;
+    padding: 12px;
+    margin-right: 7px;
+    transition-duration: .3s;
+    border-radius: 5px;
+}
+
+.footer-icons i:hover{
+    color: #fff;
+    background: #ff5353;
+ 
+}
+
+.last-word #a{
+    color: #ff5353;
+}
+
+
+
+
